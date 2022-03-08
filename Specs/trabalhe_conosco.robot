@@ -14,20 +14,20 @@ Test
     Click Element   ${trabalheConosco.btnAccept}
     Click Element   ${trabalheConosco.btnCadastrarCurriculo}
     Switch Window   New
-    Input Text  ${trabalheConosco.nome} ${preencheCampos.nome}
-    Input Text  ${trabalheConosco.cargo} ${preencheCampos.cargo}
-    Input Text  ${trabalheConosco.salario} ${preencheCampos.salario}
-    Input Text  ${trabalheConosco.email} ${preencheCampos.email}
-    Input Text  ${trabalheConosco.telefone} ${preencheCampos.telefone}
-    Select From Lis By value  ${trabalheConosco.cmbPais}  ${preencheCampos.cmbPais}
-    Input Text  ${trabalheConosco.estado} ${preencheCampos.estado}
-    Input Text  ${trabalheConosco.cidade} ${preencheCampos.cidade}
-    Input Text  ${trabalheConosco.bairro} ${preencheCampos.bairro}
-    Input Text  ${trabalheConosco.endereco} ${preencheCampos.endereco}
-    Input Text  ${trabalhe_conosco.cep} ${preencheCampos.cep}
-    Input Text  ${trabalheConosco.resumo} ${preencheCampos.resumo}
+    Input Text  ${trabalheConosco.nome}  ${textForm.nome}
+    Input Text  ${trabalheConosco.cargo}  ${textForm.cargo}
+    Input Text  ${trabalheConosco.salario}  ${textForm.salario}
+    Input Text  ${trabalheConosco.email}  ${textForm.email}
+    Input Text  ${trabalheConosco.telefone} ${textForm.telefone}
+    Select From Lis By value  ${trabalheConosco.cmbPais}  ${textForm.cmbPais}
+    Input Text  ${trabalheConosco.estado}  ${textForm.estado}
+    Input Text  ${trabalheConosco.cidade}  ${textForm.cidade}
+    Input Text  ${trabalheConosco.bairro}  ${textForm.bairro}
+    Input Text  ${trabalheConosco.endereco}  ${textForm.endereco}
+    Input Text  ${trabalheConosco.cep}  ${textForm.cep}
+    Input Text  ${trabalheConosco.resumo}  ${textForm.resumo}
     Choose File  ${trabalheConosco.curriculo}  ${EXECDIR}/Curriculo.pdf
     Wait Until Page Contains Curriculo.pdf 30
     Scroll Element Into View  ${trabalheConosco.btnFinalizar}
     Click Element  ${trabalheConosco.btnFinalizar}
-     Wait Until Element contains ${trabalheConosco.sucesso}  ${preencheCampos.sucesso}  30
+    Wait Until Element contains ${trabalheConosco.sucesso}  ${textForm.sucesso}  30

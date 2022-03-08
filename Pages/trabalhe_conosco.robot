@@ -3,7 +3,7 @@
 &{trabalheConosco}
 ...     btnCadastrarCurriculo=//a[text()='CADASTRE SEU CURRICULO']
 ...     btnCadastrarCurriculo=//a[text()='CADASTRE SEU CURRICULO']
-...     nome//*[@id="name"]
+...     inputNome//*[@id="name"]
 ...     cargo//*[@id="healine"]
 ...     salario=//*[@id="salary"]
 ...     email=//*[@id="email"]
@@ -26,7 +26,7 @@
 ...     salario=4.000,00
 ...     email=avelinafilipe@hotmail.com
 ...     telefone=11 959530383
-...     cmbPais=bairro
+...     cmbPais=BR
 ...     estado=SP
 ...     cidade=Sao Bernardo do Campo
 ...     bairro=Rudge Ramos
