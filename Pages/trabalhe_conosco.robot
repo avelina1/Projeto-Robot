@@ -20,7 +20,7 @@
 ...     btnFinalizar=//button[@type='submit']
 ...     sucesso=//*[text()='com sucesso']
 
-&{preencherFormulario}
+&{textForm}
 ...     nome=Avelina Filipe
 ...     cargo=Analista de Qualidade
 ...     salario=4.000,00
